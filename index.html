@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Учёт блядских цен</title>
+	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+ 
+  <body>
+	<header>
+		<h1 style="vertical-align:center;">
+			<img src="images/logo.svg" height=35 alt="logo">
+			Учёт блядских цен на продукты
+		</h1>
+		<hr>
+	</header>
+
+	<main>
+		<div id="number"></div>
+		<form onsubmit="return false;">
+			<div class="form-line">
+				<label for="date" class="label-bold">
+					<b>Дата покупки:</b>
+				</label>
+				<input id="date" type="date">
+			</div>
+			<div class="form-line">
+				<label for="shop">Магазин:</label>
+				<input id="shop" type="text" maxlength="25" list="shop-list">
+				<datalist id="shop-list">
+					<option>Градусы</option>
+					<option>Дикси</option>
+					<option>Магнит</option>
+					<option>Перекрёсток</option>
+					<option>Пятерочка</option>
+				</datalist>
+			</div>
+			<div class="form-line">
+				<label for="product">Продукт:</label>
+				<input id="product" type="text" maxlength="25" list="product-list">
+				<datalist id="product-list">
+					<option>Батон</option>
+					<option>Брокколи</option>
+					<option>Булочка 40г</option>
+					<option>Вода газированная</option>
+					<option>Картошка 1кг</option>
+					<option>Корнишоны</option>
+					<option>Куриные бёдра</option>
+					<option>Лимонад</option>
+					<option>Макароны</option>
+					<option>Масло шоколадное</option>
+					<option>Мини-рулеты</option>
+					<option>Молоко</option>
+					<option>Набор роллов</option>
+					<option>Наггетсы</option>
+					<option>Паста томатная</option>
+					<option>Пельмени</option>
+					<option>Печенье шоколадное</option>
+					<option>Пивасик</option>
+					<option>Приправа для картофеля</option>
+					<option>Приправа для курицы</option>
+					<option>Пюре детское</option>
+					<option>Сметана 330г</option>
+					<option>Сухарики</option>
+					<option>Фарш</option>
+					<option>Хлеб белый</option>
+					<option>Хотстеры</option>
+					<option>Чай чёрный</option>
+					<option>Чебупицца</option>
+					<option>Чипсы</option>
+					<option>Шаверма</option>
+					<option>Шоколад</option>
+					<option>Энергетик</option>
+					<option>Энергетик 1л.</option>
+				</datalist>
+			</div>
+			<div class="form-line">
+				<label for="brand" >Бренд:</label>
+				<input id="brand" type="text" maxlength="25" list="brand-list">
+				<datalist id="brand-list">
+					<option>777</option>
+					<option>Alpen Gold</option>
+					<option>BIZON</option>
+					<option>Ближние Горки</option>
+					<option>GARAGE</option>
+					<option>Global Village</option>
+					<option>Горячая штучка</option>
+					<option>DIESEL</option>
+					<option>DRIVE</option>
+					<option>Зерница</option>
+					<option>Карельская жемчужина</option>
+					<option>Красная цена</option>
+					<option>Lucky Days</option>
+					<option>Любятово</option>
+					<option>Магета</option>
+					<option>Моя цена</option>
+					<option>ПР!СТ</option>
+					<option>Птицефабрика в Белоусово</option>
+					<option>Россия</option>
+					<option>Сакура</option>
+					<option>Скатерть-самобранка</option>
+					<option>СЛАВМО</option>
+					<option>Старый мельник</option>
+					<option>Societe Minerale</option>
+					<option>Tess</option>
+					<option>TORNADO</option>
+					<option>Faxe</option>
+					<option>Фрутоняня</option>
+					<option>Shweppes</option>
+					<option>Щедрая Русь</option>
+				</datalist>
+			</div>
+			<div class="form-line">
+				<label for="price">Цена:</label>
+				<input id="price" type="number" min="1" step="0.01">
+			</div>
+			<div id="discount-checkbox-line">
+				<input id="discount-checkbox" type="checkbox" value="has-discount">
+				<label for="discount-checkbox">С учетом скидки</label>
+			</div>
+			<div align="right">
+				<button type="submit" disabled>&gt;</button>
+				<!-- <button>&lt;</button> -->
+			</div>
+		</form>
+	</main>
+
+	<nav>
+		<a href="history.html" title="Зачем.">История покупок</a>
+	</nav>
+
+	<iframe width="582" height="315" 
+		    src="https://www.youtube.com/embed/5qap5aO4i9A" 
+			title="YouTube video player" frameborder="0" 
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen>
+	</iframe>
+
+	<script src="scripts/main.js"></script>
+  </body>
+</html> 
+
